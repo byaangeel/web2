@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyería by.aangeel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+    <meta property="og:title" content="Joyería by.aangeel">
+    <meta property="og:description" content="Las mejores joyas para cada ocasión.">
+    <meta property="og:image" content="./INICIO/icon.jpg">
+    <link rel="icon" href="./INICIO/logo1.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776; <!-- Unicode for hamburger menu icon -->
+        </div>
+        <a href="index.html">
+            <img src="./INICIO/logo3.png"  alt="Logo de Joyería by Aangeel" loading="lazy">
+        </a>
+        
+    </header>
+    <section class="news-section">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./SLIDER/1.png" alt="Noticia 1" loading="lazy">
+                </div>
+                <!-- Agrega más diapositivas según sea necesario -->
+                <div class="swiper-slide">
+                    <img src="./SLIDER/2.png" alt="Noticia 2" loading="lazy">
+                </div>
+            </div>
+        </div>
+        <div class="slider-text">
+            <h2>Estoy buscando:</h2>
+            <p>Explora una amplia variedad de joyas diseñadas para ti.</p>
+        </div>
+    </section>
+    <section class="categories-section">
+        <div class="category-card" onclick="window.location.href='collares.html'">
+            <img src="./VENDIDO/1.png" alt="Collares" loading="lazy">
+            <div class="category-text">Collares</div>
+        </div>
+        <div class="category-card" onclick="window.location.href='anillos.html'">
+            <img src="./VENDIDO/2.png" alt="Anillos"loading="lazy">
+            <div class="category-text">Anillos</div>
+        </div>
+        <div class="category-card" onclick="window.location.href='cadenas.html'">
+            <img src="./VENDIDO/3.png" alt="Cadenas" loading="lazy">
+            <div class="category-text">Cadenas</div>
+        </div>
+        <div class="category-card" onclick="window.location.href='aretes.html'">
+            <img src="./VENDIDO/4.png" alt="Aretes" loading="lazy">
+            <div class="category-text">Aretes</div>
+        </div>
+        <div class="category-card" onclick="window.location.href='pulseras.html'">
+            <img src="./VENDIDO/5.png" alt="Pulseras" loading="lazy">
+            <div class="category-text">Pulseras</div>
+        </div>
+        <div class="category-card" onclick="window.location.href='relojes.html'">
+            <img src="./VENDIDO/6.png" alt="Relojes" loading="lazy">
+            <div class="category-text">Relojes</div>
+        </div>
+    </section>
+</section>
+<section class="best-sellers-section">
+    <h2>BEST SELLERS</h2>
+    <div class="best-sellers-images">
+        <div class="best-seller-horizontal">
+            <img src="./VENDIDO/5.png" alt="Best Seller Horizontal" loading="lazy">
+            <div class="best-sellers-description">
+                <h3>Best Seller Horizontal</h3>
+                <p>Descripción del best seller horizontal.</p>
+            </div>
+        </div>
+        <div class="best-sellers-grid">
+            <div class="best-seller-item">
+                <img src="./VENDIDO/4.png" alt="Best Seller 2" loading="lazy">
+                <div class="best-sellers-description">
+                    <h3>Best Seller 2</h3>
+                    <p>Descripción del best seller 2.</p>
+                </div>
+            </div>
+            <div class="best-seller-item">
+                <img src="./VENDIDO/5.png" alt="Best Seller 3" loading="lazy">
+                <div class="best-sellers-description">
+                    <h3>Best Seller 3</h3>
+                    <p>Descripción del best seller 3.</p>
+                </div>
+            </div>
+            <div class="best-seller-item">
+                <img src="./VENDIDO/5.png" alt="Best Seller 4"loading="lazy">
+                <div class="best-sellers-description">
+                    <h3>Best Seller 4</h3>
+                    <p>Descripción del best seller 4.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ <nav id="side-menu" class="side-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+        <a href="index.html">Inicio</a>
+        <a href="anillos.html">Anillos</a>
+        <a href="cadenas.html">Cadenas</a>
+        <a href="aretes.html">Aretes</a>
+        <a href="pulseras.html">Pulseras</a>
+        <a href="relojes.html">Relojes</a>
+        <a href="contacto.html">Contactar</a>
+ </nav>
+ <footer>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h3>Joyería by.aangeel</h3>
+            <p>Las mejores joyas para cada ocasión.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-section contact">
+            <h3>Contacto</h3>
+            <p>Teléfono: +123 456 7890</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 Joyería by.aangeel | Todos los derechos reservados.
+    </div>
+</footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
