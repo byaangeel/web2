@@ -113,75 +113,75 @@ body {
     color: #333;
 }
 
-/* Catálogo de productos */
-.catalogo {
+.titulo-buscando {
+    position: absolute;
+    bottom: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilos para la sección de imágenes con scroll horizontal */
+.imagenes-scroll-horizontal {
+    margin: 150px 0 80px 0;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.scroll-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 20px 0;
 }
 
 .categoria {
-    width: 100%;
-    max-width: 600px;
-    margin-bottom: 1px;
+    display: inline-block;
     text-align: center;
+    margin-right: 20px;
 }
 
-.titulo-categoria {
-    font-family: 'Rowdies', sans-serif;
-    font-size: 50px;
-    margin-bottom: 0px;
-    color: #91618A;
-}
-
-.fila {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    margin: 10px 0;
-}
-
-.fila-reverse {
-    flex-direction: row-reverse;
-}
-
-.columna {
-    position: relative;
-    width: 45%;
-    text-align: center;
-}
-
-.imagen-categoria {
-    width: 100%;
+.imagen-scroll {
+    width: 200px;
     height: auto;
-    max-width: 100%;
+    border-radius: 10px; /* Opcional: agrega bordes redondeados */
+}
+
+.nombre-categoria {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.titulo-novedades {
+    margin-left: 20px;
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.imagen-novedades {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 20px;
     border-radius: 10px;
 }
 
-.imagen-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
+@media screen and (max-width: 768px) {
+    .imagen-scroll {
+        width: 150px; /* Ajuste para dispositivos móviles */
+    }
 
-.ver-todo-btn {
-    font-family: 'Rowdies', sans-serif;
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-decoration: none;
-    background-color: #91618A;
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-size: 16px;
-    z-index: 1;
-}
+    .titulo-novedades {
+        margin-left: 10px;
+        font-size: 20px;
+    }
 
-.ver-todo-btn:hover {
-    background-color: #785072;
+    .imagen-novedades {
+        max-width: 400px; /* Ajuste para dispositivos móviles */
+    }
 }
